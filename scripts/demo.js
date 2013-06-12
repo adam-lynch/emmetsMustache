@@ -14,6 +14,8 @@ document.getElementsByTagName('form')[0].addEventListener('submit', function(e){
     resultContainer.className = '';
 });
 
-document.getElementById('insert').addEventListener('click', function(){
+document.getElementById('insert').addEventListener('click', function(e){
+    e.preventDefault();
+
     resultElement.innerHTML = resultField.value;
 });
