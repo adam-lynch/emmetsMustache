@@ -1,0 +1,55 @@
+body {
+    font-family: sans-serif;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+form {
+    margin: 0 20px 20px;
+}
+
+button,
+input[type=submit],
+input[type=reset] {
+    cursor: pointer;
+}
+
+blockquote {
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+blockquote blockquote {
+    margin-right: 50px;
+}
+
+blockquote .author::before {
+    content: '- ';
+}
+
+a {
+    color: #bd0000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.github-ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+}

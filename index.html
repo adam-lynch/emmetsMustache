@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Emmet's Mustache</title>
+        <link rel="stylesheet" href="style/demo.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="pull-left">
+            <h1><a href="https://github.com/adam-lynch/emmetsMustache">Emmet's Mustache</a></h1>
+            <p><a href="https://github.com/adam-lynch/emmetsMustache"><img class="github-ribbon" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a></p>
+
+            <form>
+                <div>
+                    <div><label for="abbreviation">The abbreviated template:</label></div>
+                    <textarea id="abbreviation" rows="9" cols="50">div#page>div#header>p{Blah blah blah... welcome {{name}}}+p>a[href=http://plus.google.com/123]{{{name}} on Google+}^div#more>p>a[href="#more"]{More}^^blockquote[cite=http://en.wikipedia.org/wiki/Michael_Scott_Paper_Company#Cultural_references]>blockquote{"You miss 100% of the shots you don't take."}>br+small.author.pull-right{Wayne Gretzky}^+br+small.author.pull-right{Michael Scott}+br+img[src=http://25.media.tumblr.com/tumblr_lqiu1uOtc61r2or6qo1_500.jpg][alt=""]</textarea>
+                </div>
+
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" size="15" value="John">
+
+
+                <input type="submit" value="Render!">
+                <input type="reset">
+
+                <div id="result-container" class="hide">
+                    <br>
+                    <div>
+                        <label for="result">The resultant HTML:</label>
+                    </div>
+                    <div>
+                        <textarea id="result" rows="12" cols="50"></textarea>
+                    </div>
+
+                    <button id="insert" class="pull-right">Insert into DOM</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="result-element" class="pull-left"></div>
+
+        <!-- na scripts: -->
+        <script src="scripts/emmet.min.js"></script>
+        <script src="scripts/mustache.js"></script>
+        <script src="scripts/emmets-mustache.js"></script>
+        <script src="scripts/demo.js"></script>
+    </body>
+</html>
